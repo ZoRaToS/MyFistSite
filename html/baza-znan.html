@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>База знань</title>
+    <link rel="stylesheet" href="../style/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">
+            <a href="#"><img src="../images/chip.png" alt="Логотип сайту" >
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Головна</a></li>
+                <li>
+                    <a href="html/baza-znan.html">База знань</a> 
+                </li>
+                <li><a href="#">Про нас</a></li>
+                <li><a href="#">Послуги</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+        </nav>
+        
+            <form id="searchForm" class="search-form">
+                <input type="text" id="searchInput" name="q" placeholder="Пошук на сайті">
+                <button>Пошук</button>
+            </form>
+            
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="closeModal">&times;</span>
+                    <ul id="searchResults"></ul>
+                </div>
+            </div>
+        
+            <script src="../js/search.js"></script>
+        
+    </header>
+     <div class="knowledge-base">
+        <div class="knowledge-base-content-block">
+            <div class="sidebar">
+                <ul class="inner-menu" id="nav">
+                    <li class="menu-item menu-item-category menu-item-1200">
+                       <a href="#">Теоретичні основи</a> 
+                       <ul class="submenu">
+                        <li class="menu-item menu-item-subcategory menu-item-2100">
+                            <a href="#">
+                                Основи електростатики
+                            </a>
+                            <ul class="submenu">
+                                <li class="menu-item menu-item-post menu-item-3100">
+                                 <a href="#new">Визначення і зображення електричного поля</a>
+                                </li>
+                                <li class="menu-item menu-item-post menu-item-3100">
+                                    <a href="#">Закон Кулона. Напруженість електричного поля</a>
+                                </li>
+                                <li class="menu-item menu-item-post menu-item-3100">
+                                    <a href="#">Потенціал. Електрична напруга</a>
+                                </li>
+                                <li class="menu-item menu-item-post menu-item-3100">
+                                    <a href="#">Діелектрики у електричному полі. Поляризація діелектрика</a>
+                                </li>
+                                <li class="menu-item menu-item-post menu-item-3100">
+                                    <a href="#">Електроізоляційні матеріали</a>
+                                </li>
+                                <li class="menu-item menu-item-post menu-item-3100">
+                                    <a href="#">Електрична ємність. Плоский конденсатор</a>
+                                </li>
+                                <li class="menu-item menu-item-post menu-item-3100">
+                                    <a href="#">З’єднання конденсаторів. Енергія електричного поля</a>
+                                </li>
+                              
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-subcategory menu-item-2100">
+                            <a href="#">
+                                Постійний струм та кола постійного струму
+                            </a>
+                            <ul class="submenu">
+                                <li class="menu-item menu-item-post menu-item-3100">
+                                    <a href="#">Електричне коло</a>
+                                </li>
+                                <li class="menu-item menu-item-post menu-item-3100">
+                                    <a href="#">Електричний струм</a>
+                                </li>
+                                <li class="menu-item menu-item-post menu-item-3100">
+                                    <a href="#">Електрорушійна сила і напруга</a>
+                                </li>
+                                <li class="menu-item menu-item-post menu-item-3100">
+                                    <a href="#">Закон Ома</a>
+                                </li>
+                                <li class="menu-item menu-item-post menu-item-3100">
+                                    <a href="#">Електричний опір. Провідність</a>
+                                </li>
+                                <li class="menu-item menu-item-post menu-item-3100">
+                                    <a href="#">Залежність опору від температури</a>
+                                </li>
+                                <li class="menu-item menu-item-post menu-item-3100">
+                                    <a href="#">Способи з’єднання опорів</a>
+                                </li>
+                                <li class="menu-item menu-item-post menu-item-3100">
+                                    <a href="#">Електрична робота і потужність. Перетворення електричної енергії в теплову</a>
+                                </li>
+                              
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-subcategory menu-item-2100">
+                            <a href="#">Електромагнетизм</a>
+                            <ul class="submenu">
+                                <li class="menu-item menu-item-post menu-item-3100">
+                                    <a href="#">Характеристики магнітного поля</a>
+                                </li>
+                                <li class="menu-item menu-item-post menu-item-3100">
+                                    <a href="#">Магнітне поле прямолінійного струму</a>
+                                </li>
+                                <li class="menu-item menu-item-post menu-item-3100">
+                                    <a href="#">Намагнічування феромагнітних матеріалів</a>
+                                </li>
+                                <li class="menu-item menu-item-post menu-item-3100">
+                                    <a href="#">Розрахунок магнітного кола</a>
+                                </li>
+                                <li class="menu-item menu-item-post menu-item-3100">
+                                    <a href="#">Електрон у магнітному полі</a>
+                                </li>
+                                <li class="menu-item menu-item-post menu-item-3100">
+                                    <a href="#">Провідник зі струмом в магнітному полі. Взаємодія провідників зі струмом</a>
+                                </li>
+                                <li class="menu-item menu-item-post menu-item-3100">
+                                    <a href="#">Закон електромагнітної індукції</a>
+                                </li>
+                                <li class="menu-item menu-item-post menu-item-3100">
+                                    <a href="#">Електрорушійна сила індукції в контурі</a>
+                                </li>
+                                <li class="menu-item menu-item-post menu-item-3100">
+                                    <a href="#">Принцип Ленца</a>
+                                </li>
+                                <li class="menu-item menu-item-post menu-item-3100">
+                                    <a href="#">Перетворення механічної енергії в електричну</a>
+                                </li>
+                                <li class="menu-item menu-item-post menu-item-3100">
+                                    <a href="#">Перетворення електричної енергії в механічну</a>
+                                </li>
+                                <li class="menu-item menu-item-post menu-item-3100">
+                                    <a href="#">Потокозчеплення і індуктивність котушки</a>
+                                </li>
+                                <li class="menu-item menu-item-post menu-item-3100">
+                                    <a href="#">Електрорушійна сила самоіндукції. Енергія магнітного поля</a>
+                                </li>
+                              
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-subcategory menu-item-2100">
+                            <a href="#">Змінний струм та кола змінного струму</a>
+                            <ul class="submenu">
+                                <li class="menu-item menu-item-post menu-item-3100">
+                                    <a href="#">Визначення, отримання і зображення змінного струму</a>
+                                </li>
+                                <li class="menu-item menu-item-post menu-item-3100">
+                                    <a href="#test">Параметри змінного струму</a>
+                                </li>
+                            </ul>
+                        </li>
+                       </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
