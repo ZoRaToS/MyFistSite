@@ -13,7 +13,6 @@ body {
     justify-content: space-between; /* Розміщення логотипу та меню по краях хедера */
     align-items: center; /* Вирівнювання по вертикалі по центру */
 }
-
 .logo {
     height: 72px;
     flex: 0 0 72px;
@@ -45,49 +44,135 @@ nav a {
     color: #fff; /* Колір тексту посилань */
 }
 
+.site-footer{
+    display: flex;
+    background-color: darkblue;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    align-items: center;
+}
+ .contact-information-block{
+    flex: 1; /* Розширення навігаційного меню на всю доступну ширину */
+    display: flex;
+    justify-content: center; 
+}
+.contact-information-block ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+.contact-information-block li{
+    margin-right: 30px; 
+}
+.contact-information-block a{
+    text-decoration: none; /* Видаляємо підкреслення з посилань */
+    color: #fff
+}
 
-div{
+
+
+/* div{
     display: block;
+} */
+/* Стиль для сторінки Головна  */
+.site-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .section-articles{
+    display: flex;
+    flex-direction: column;
     flex: 1;
     padding: 20px;
-    border-right: 1px solid #424242;
-    float: left;
-    width: 63.2%;
-
-}
-.section-tags{
-    flex: 1;
-    padding: 20px;
-    /* border: 1px solid #424242; */
-    float: right;
-    width: 30%;
+    border: 1px solid #424242;
+    margin: 10px;
+    /* box-sizing: border-box; */
+    
 }
 
-.article-header{
+.section-articles .articles-block{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+ .section-articles .articles-block .article{
+    flex: 1 0 calc(50% - 10px);
+    
+}
+
+.section-articles .article-header{
     /* font-family: Arial, Helvetica, sans-serif; */
     font-size: 1.8rem; 
     font-weight: 300;
 }
-.article{
+.section-articles .article-header .article-title{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.0em;
-    font-weight: 400;
+    font-weight: 600;
 }
-.article-title a, .tag-content a{
+.article-title a{
     text-decoration: none;
     color: black;
 }
-.tag-content-container{
-    width: fit-content;
+
+.site-page .carousel-section{
+    display: flex;
+    border: 1px solid #424242;
+    width: 900px;
+    height: 300px;
+    margin-top: 30px;
+    position: relative;
+    margin-bottom: 30px;
 }
-.tag-content{
-    background-color: bisque;
-    padding: 6px;
-    border-radius: 10px;
+.carousel-section .galery{
+    display: flex;
+    overflow: hidden;
+    border: 1px solid #424242;
+    align-items: center;
+}
+ .content-slider-block{
+    /* width: 33.33%; */
+    /* flex: 0 0 33.33%; */
+    display: inline-block;
+    
 }
 
+.galery .image-block img{
+    max-width: 100%;
+    height: auto;
+}
+.galery .text-block{
+    text-align: center;
+}
+.carousel-section .slick-prev, .carousel-section .slick-next{
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 7px;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    margin: 0 10px;
+    width: fit-content;
+    height: fit-content;
+    
+}
+.slick-prev:hover, .slick-next:hover{
+    background-color: #1f3164;
+    
+}
+.slick-next{
+    
+}
+.slick-prev{
+    content: "prev";
+}
+
+/* Стиль для сторінки База знань */
 .knowledge-base{
     margin-top: 20px;
     margin-left: 30px;
@@ -161,6 +246,7 @@ ul{
 .knowledge-base .sidebar .inner-menu>li>ul>li>ul>li+li{
     margin-top: 10px;
 }
+
 a{
     text-decoration: none;
 }
@@ -199,3 +285,4 @@ a{
     padding: 10px;
     cursor: pointer;
 }
+
