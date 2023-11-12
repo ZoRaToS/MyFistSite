@@ -24,12 +24,12 @@ document.addEventListener('DOMContentLoaded', function() {
     
 
 
-    searchForm.addEventListener('submit', function(event) {
-        event.preventDefault(); // Заборонити стандартну подію відправки форми
-        // const query = searchInput.value.toLowerCase();
-        // const results = performSearch(query, data);
-        // displayResults(results);
-    });
+    // searchForm.addEventListener('submit', function(event) {
+    //     event.preventDefault(); // Заборонити стандартну подію відправки форми
+    //      const query = searchInput.value.toLowerCase();
+    //      const results = performSearch(query, data);
+    //      displayResults(results);
+    // });
 
     // closeModalButton.addEventListener('click', function() {
     //     modal.style.display = 'none';

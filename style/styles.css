@@ -169,7 +169,7 @@ nav a {
     
 }
 .slick-prev{
-    content: "prev";
+    
 }
 
 /* Стиль для сторінки База знань */
@@ -181,7 +181,7 @@ nav a {
 
 .knowledge-base .knowledge-base-content-block{
     background-color: #f0f0f0;
-    padding: 15px;
+    padding: 5px 20px 5px 20px;
 }
 .knowledge-base .sidebar{
     height: auto;
@@ -194,8 +194,9 @@ nav a {
 }
 .sidebar .inner-menu li{
     display: block;
-    
-
+}
+.sidebar .inner-menu>li{
+    margin-top: 20px;
 }
 
 .knowledge-base .sidebar .inner-menu > li > ul{
@@ -284,5 +285,26 @@ a{
     right: 0;
     padding: 10px;
     cursor: pointer;
+}
+.site-page-post{
+    display: block;
+    border: 1px solid #888;
+    margin: 0px 50px 0px 50px;
+    color:red;
+}
+.content-padding{
+    padding-left: 15px;
+}
+.head-of-article{
+    text-align: center;
+}
+.image-post-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image-post-content img{
+    width: 300px;
+    
 }
 
